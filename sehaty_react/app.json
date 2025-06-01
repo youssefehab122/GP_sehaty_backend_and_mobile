@@ -1,0 +1,84 @@
+{
+  "expo": {
+    "name": "Medicine_Finder",
+    "slug": "Medicine_Finder",
+    "scheme": "sehaty",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "permissions": ["ACCESS_FINE_LOCATION"],
+    "extra": {
+      "API_URL": " https://9e96-197-57-121-35.ngrok-free.app/api"
+    },
+    "newArchEnabled": true,
+     "androidStatusBar": {
+      "backgroundColor": "#FFFFFF", 
+      "barStyle": "dark-content",   
+      "translucent": true          
+    },
+    
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.example.medicinefinder2",
+       "config": {
+        "googleMapsApiKey":  "AIzaSyCZxxXuKwewHxtHPL1zzOBJC6C1ZnbCUO4"
+        },
+      "infoPlist": {
+        "CFBundleURLTypes": [
+          {
+            "CFBundleURLSchemes": ["sehaty"],
+            "CFBundleURLName": "com.example.medicinefinder2"
+          }
+        ],
+        "LSApplicationQueriesSchemes": ["sehaty"]
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/splash.png",
+        "backgroundColor": "#ffffff"
+      },
+      "googleServicesFile": "./google-services.json",
+      "useNextNotificationsApi": true,
+      "package": "com.example.medicinefinder",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyCZxxXuKwewHxtHPL1zzOBJC6C1ZnbCUO4"
+        }
+      },
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "data": [
+            {
+              "scheme": "sehaty",
+              "host": "payment-complete"
+            }
+          ],
+          "category": ["BROWSABLE", "DEFAULT"]
+        }
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-notifications",
+      "expo-font",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow Location",
+          "locationWhenInUsePermission": "Allow Location Access"
+        }
+      ]
+    ],
+    "assetBundlePatterns": ["**/*"]
+  }
+}

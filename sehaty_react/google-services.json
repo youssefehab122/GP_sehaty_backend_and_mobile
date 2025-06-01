@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "272611160140",
+    "project_id": "medicine-finder-ef4d7",
+    "storage_bucket": "medicine-finder-ef4d7.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:272611160140:android:3394bcbe617ad1430604e9",
+        "android_client_info": {
+          "package_name": "com.example.medicinefinder"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCd2LChVRCZL10FcKKkmr50Tcz-FdUD2cw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
